@@ -11,6 +11,7 @@ urlpatterns = [
     path('api/', include('settlements.urls')),
     path('api/', include('notifications.urls')),
     path('api/', include('chat.urls')),
+    path('api/', include('importer.urls')),
 ]
 
 if settings.DEBUG:
