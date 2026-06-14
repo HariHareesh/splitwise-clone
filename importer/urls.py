@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import ImportCSVView
+from . import views
 
 urlpatterns = [
-    path('import/', ImportCSVView.as_view(), name='import-csv'),
+    path('groups/<int:group_id>/import/', views.CSVImportView.as_view(), name='csv-import'),
+    path('import/<int:session_id>/report/', views.ImportReportView.as_view(), name='import-report'),
 ]
