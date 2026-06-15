@@ -1,0 +1,154 @@
+﻿{
+  "import_id": 1,
+  "total_rows": 42,
+  "imported": 39,
+  "skipped": 3,
+  "anomaly_count": 18,
+  "message": "Import complete. 39 rows imported, 3 skipped, 18 anomalies detected.",
+  "anomalies": [
+    {
+      "row": 6,
+      "type": "probable_duplicate",
+      "description": "\"dinner - marina bites\" (3200) on 2026-02-08 may be a duplicate of \"Dinner at Marina Bites\" (3200). Both imported. Needs review.",
+      "original": "dinner - marina bites",
+      "resolved": "Imported (needs review)",
+      "action": "needs_review"
+    },
+    {
+      "row": 7,
+      "type": "amount_format_fixed",
+      "description": "Amount format cleaned for \"Electricity Feb\": Cleaned from '1,200' to '1200'",
+      "original": "1,200",
+      "resolved": "1200",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 9,
+      "type": "name_normalized",
+      "description": "Payer \"priya\" normalized to \"Priya\"",
+      "original": "priya",
+      "resolved": "Priya",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 10,
+      "type": "amount_rounded",
+      "description": "\"Cylinder refill\" amount 899.995 rounded to 900.00",
+      "original": "899.995",
+      "resolved": "900.00",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 11,
+      "type": "name_normalized",
+      "description": "Payer \"Priya S\" normalized to \"Priya\"",
+      "original": "Priya S",
+      "resolved": "Priya",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 13,
+      "type": "missing_payer",
+      "description": "\"House cleaning supplies\" has no payer. Imported with payer=UNKNOWN.",
+      "original": "",
+      "resolved": "UNKNOWN",
+      "action": "needs_review"
+    },
+    {
+      "row": 14,
+      "type": "reclassified_as_settlement",
+      "description": "\"Rohan paid Aisha back\" appears to be a settlement, not an expense.",
+      "original": "Rohan paid Aisha back",
+      "resolved": "Moved to settlements table",
+      "action": "reclassified"
+    },
+    {
+      "row": 20,
+      "type": "currency_converted",
+      "description": "\"Goa villa booking\" converted from USD 540 to INR 45090.00 at rate 83.5",
+      "original": "USD 540",
+      "resolved": "INR 45090.00",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 21,
+      "type": "currency_converted",
+      "description": "\"Beach shack lunch\" converted from USD 84 to INR 7014.00 at rate 83.5",
+      "original": "USD 84",
+      "resolved": "INR 7014.00",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 23,
+      "type": "currency_converted",
+      "description": "\"Parasailing\" converted from USD 150 to INR 12525.00 at rate 83.5",
+      "original": "USD 150",
+      "resolved": "INR 12525.00",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 23,
+      "type": "unknown_member_in_split",
+      "description": "\"Dev's friend Kabir\" is not a known member. Excluded from split.",
+      "original": "Dev's friend Kabir",
+      "resolved": "Excluded",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 25,
+      "type": "probable_duplicate",
+      "description": "\"Thalassa dinner\" (2450) on 2026-03-11 may be a duplicate of \"Dinner at Thalassa\" (2400). Both imported. Needs review.",
+      "original": "Thalassa dinner",
+      "resolved": "Imported (needs review)",
+      "action": "needs_review"
+    },
+    {
+      "row": 26,
+      "type": "negative_amount_refund",
+      "description": "\"Parasailing refund\" has negative amount -30. Treated as refund.",
+      "original": "-30",
+      "resolved": "-30",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 26,
+      "type": "currency_converted",
+      "description": "\"Parasailing refund\" converted from USD -30 to INR -2505.00 at rate 83.5",
+      "original": "USD -30",
+      "resolved": "INR -2505.00",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 27,
+      "type": "name_normalized",
+      "description": "Payer \"rohan\" normalized to \"Rohan\"",
+      "original": "rohan",
+      "resolved": "Rohan",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 31,
+      "type": "zero_amount",
+      "description": "\"Dinner order Swiggy\" has amount=0. Notes: \"counted twice earlier - fixing later\"",
+      "original": "0",
+      "resolved": "Skipped",
+      "action": "skipped"
+    },
+    {
+      "row": 36,
+      "type": "inactive_member_in_split",
+      "description": "\"Meera\" left on 2026-03-31 but is in split for 2026-04-02. Removed.",
+      "original": "Meera",
+      "resolved": "Removed from split",
+      "action": "auto_fixed"
+    },
+    {
+      "row": 38,
+      "type": "reclassified_as_settlement",
+      "description": "\"Sam deposit share\" appears to be a settlement, not an expense.",
+      "original": "Sam deposit share",
+      "resolved": "Moved to settlements table",
+      "action": "reclassified"
+    }
+  ]
+}
